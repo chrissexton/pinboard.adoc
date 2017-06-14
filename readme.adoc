@@ -1,0 +1,23 @@
+= pinboard.adoc
+:icons: font
+
+A small utility to export your https://pinboard.in[Pinboard] bookmarks to Asciidoc via the https://pinboard.in/api[Pinboard API].
+
+== Usage
+
+NOTE: You will need your Pinboard API token, available at: https://pinboard.in/settings/password[]
+
+.Steps to success
+. Install the program using, `go get github.com/chrissexton/pinboard.adoc`
+. Run the exporter using, `pinboard.adoc -auth <your auth token here> > yourfile.adoc`
+. Convert the resulting file, `asciidoctor yourfile.adoc`
+. ???
+. Go enjoy a beer.
+
+=== Custom templates
+
+You may create custom templates for your bookmarks, and they don't even need to be adoc! Just run the program with the `-example` switch to get a sample output and use the `-fmt=custom` switch to turn on the custom format. Provide a template with the `-tmpl` switch.
+
+== Is it good?
+
+It's not bad.
